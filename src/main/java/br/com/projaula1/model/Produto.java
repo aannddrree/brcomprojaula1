@@ -1,21 +1,29 @@
 package br.com.projaula1.model;
 
+import lombok.AllArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import java.io.Serializable;
 
 @Document
-public class Produto {
+public class Produto implements Serializable {
 
     @Id
-    private int id;
+    private String _id;
     private String nome;
 
-    public int getId() {
-        return id;
+    public Produto(){}
+
+    public Produto(String nome){
+        this.nome = nome;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public String getId() {
+        return _id;
+    }
+
+    public void setId(String _id) {
+        this._id = _id;
     }
 
     public String getNome() {
