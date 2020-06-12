@@ -6,3 +6,8 @@
 <h2> Iniciar o Rabbit </h2>
 <p>Administrator RabbitMQ - rabbitmq-plugins.bat enable rabbitmq_management</p>
 <p>Diretório: C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.4\sbin </p>
+
+<h2> Acesso Rabbit </h2>
+
+<p>http://localhost:15672/</p>
+<p>Usuário e senha: guest</p>
